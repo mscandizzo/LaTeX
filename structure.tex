@@ -1,0 +1,36 @@
+% structure.tex - A simple article to illustrate document structure
+
+\documentclass{article}
+\usepackage{times}
+
+\begin{document}
+    \title{How to Structure a \LaTeX{} document}
+        \author{Andrew Roberts \\
+        School of Computing, \\
+        University of Leeds, \\
+        Leeds,\\
+        \texttt{andyr@comp.leeds.ac.uk}}
+        \date{4/23/2018}
+    \maketitle
+    
+    \begin{abstract}
+        your abstract goes here...
+        
+    \end{abstract}
+    \section{Introduction}
+        this section content...
+    \section{Structure}
+        This section content..
+    \subsection{Top Matter}
+        this subsection content
+    \subsubsection{Article information}
+        this subsubsection content...
+
+    \begin{thebibliography}{9}
+        \bibitem{lamport94}
+            leslie lamport,
+            \emph{\LaTeX: a document preparation system}.
+            Addison Wesley, Massachussets,
+    \end{thebibliography}
+    
+\end{document}

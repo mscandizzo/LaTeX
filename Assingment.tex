@@ -1,0 +1,48 @@
+% structure.tex - A simple article to illustrate document structure
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{ragged2e}
+
+\usepackage{blindtext}
+
+\begin{document}
+\title{ \LaTeX{} for Lambda Students}
+\author{Mariano Scandizzo,\\
+	Scandizzo \& Partners, LLC\\
+	Portland, Maine\\
+	\texttt{mariano.scandizzo@spartners.me}}
+\date{\today}
+\maketitle
+\section{Introduction}
+\justifying
+\LaTeX{} (sometimes written `LaTeX' and always pronounced `lay tech')
+ is a document markup language. Besides being easy on the eyes, 
+ \LaTeX{} is the industry standard for modern technical documents in 
+ mathematics, computer science, machine learning, and data science.
+ At Lambda we believe strongly in learn-ing by doing, so we'll just 
+ right into the assignment. First, go to overleaf.com and make an account.
+ Create a new, blank project and delete any text that automatically comes
+ in the document. Then visit the excellent site Getting to grips with \LaTeX{}
+ by Andrew Roberts and work through sections 1, 2, 9, and 10 inside that blank
+ project. Now make another document with a header like the one on this page
+ (use your own name and replace my organization's name with Lambda School).
+ Inside that document, use everything you've learned to typeset the BAC-CAB
+ rule from vector algebra
+\begin{equation}
+	\overrightarrow{A} x \left(\overrightarrow{B} x \overrightarrow{C} \right) = \overrightarrow{B} x \left(\overrightarrow{A} x \overrightarrow{C} \right) + \overrightarrow{C} x \left(\overrightarrow{A} x \overrightarrow{B} \right)
+\end{equation}
+and the following illustration of the chain rule:
+ \begin{eqnarray*}
+       \frac{\partial \sin \left(x^2 + xy \right)}{\partial x} & = & {\partial \frac{\sin \left(x^2 + xy \right)}{\left(x^2 + xy \right)}} {\partial \frac{\left(x^2 + xy \right)}{\left(x \right)}} \\
+       & = & \cos \left(x^2 + xy \right) \left(\partial \frac{x^2}{x} + \partial \frac{x}{y} y \right) \\
+       & = & \cos \left(x^2 + xy \right) \left(2x + y \right) 
+ \end{eqnarray*}
+Pay attention to the small details:
+\begin{itemize}
+	\item Parenthesis should be large enough for the objects inside of them (this can be automated!).
+	\item Write sin, not sin. Write cos, not cos. In derivatives, write d, not d.
+\end{itemize}
+
+
+\end{document}

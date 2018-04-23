@@ -1,0 +1,68 @@
+% basic examples
+\documentclass{article}
+\usepackage{times}
+
+\begin{document}
+ 
+    $$\frac{x+y}{y-z}$$	
+
+    $$\frac{\frac{1}{x}+\frac{1}{y}}{y-z}$$	
+
+    $$x^{2n}$$
+
+    $$n_{ij}$$
+
+    $$\sqrt[3]{5x}$$
+
+    $$\left(\frac{x^2}{y^3}\right)$$
+
+    $$\left[
+    \begin{array}{ c c }
+        1 & 2 \\
+        3 & 4
+    \end{array} 
+    \right]$$
+
+    \begin{equation}
+        50 apples \times 100 apples = lost of apples
+    \end{equation}
+    
+    \begin{equation}
+        50 \mbox{apples} \times 100 \mbox{apples} = \mbox{lost of apples}
+    \end{equation}
+    \begin{equation}
+        50 \textrm{apples} \times 100 \textit{apples} = \textbf{lost of apples}
+    \end{equation}
+    
+    \begin{equation}
+        x = a_0 + \frac{1}{\displaystyle a_1 
+                + \frac{1}{\displaystyle a_2 
+                + \frac{1}{\displaystyle a_3 + a_4}}}
+    \end{equation}  
+    \begin{tabular}{ r c l }
+        \(10xy^2+15x^2y-5xy\) & \(=\) & \(5\left(2xy^2+3x^2y-xy\right)\) \\
+        & \(=\) & \(5x\left(2y^2+3xy-y\right)\) \\
+        & \(=\) & \(5xy\left(2y+3x-1\right)\)
+    \end{tabular}
+
+    \begin{eqnarray}
+        10xy^2+15x^2y-5xy & = & 5\left(2xy^2+3x^2y-xy\right) \\
+        & = & 5x\left(2y^2+3xy-y\right) \\
+        & = & 5xy\left(2y+3x-1\right)
+    \end{eqnarray}
+
+    \begin{eqnarray}
+        10xy^2+15x^2y-5xy & = & 5\left(2xy^2+3x^2y-xy\right) \nonumber \\
+        & = & 5x\left(2y^2+3xy-y\right) \nonumber \\
+        & = & 5xy\left(2y+3x-1\right)
+    \end{eqnarray}
+
+    \begin{eqnarray*}
+        \left(1+x\right)^n & = & 1 + nx + \frac{n\left(n-1\right)}{2!}x^2 \\
+        & & + \frac{n\left(n-1\right)\left(n-2\right)}{3!}x^3 \\
+        & & + \frac{n\left(n-1\right)\left(n-2\right)\left(n-3\right)}{4!}x^4 \\
+        & & + \ldots
+    \end{eqnarray*}
+
+
+\end{document}
